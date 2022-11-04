@@ -1,0 +1,145 @@
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    margin-bottom: 128px;
+  }
+
+.navbar {
+    border-radius: 0;
+    border-bottom-width: 15px;
+    border-color: black;
+}
+
+#logo {
+    border-radius: 50%;
+    margin-top: 14px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer > div > p {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #9d9d9d;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#twitter {
+    border-radius: 100%;
+}
+
+footer > span {
+    color: #9d9d9d;
+}
+
+.nav {
+    padding-left:100px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: "Barrio";
+}
+
+#welcomeText > p {
+    padding-bottom: 30px;
+}
+
+.home-carousel > img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#specialHeader {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.special-carousel > img {
+    width: 100%;
+    height: auto;
+}
+
+.special-carousel {
+    width: 35%;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.scrollbox {
+    margin-left:auto;
+    margin-right: auto;
+    width: 400px;
+    height: 250px;
+    overflow: scroll;
+    padding: 2px;
+}
+
+.special-info-header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#specialInfo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.collection-header {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.collection {
+    margin-bottom: 20px;
+}
+
+.collection-list {
+    border-bottom-style: solid;
+    border-color: #222;
+    border-bottom-width: 2px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    border: solid 2px black;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#newsletterHeader {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}

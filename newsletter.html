@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Bootstrap 3 navbar and row implemented in the body.
+    nav and footer HTML content added by insertHeaderFooter.js-->
+    <nav id="headerNav" class="navbar navbar-inverse">
+    </nav>
+    <div>
+        <h1 id="newsletterHeader">Sign up to our Newsletter to stay up-to-date on the latest!</h1>
+        <form action=" http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email:">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+    </div>
+    <footer id="footer" class="container-fluid">
+    </footer>
+</body>
+<script src="functions/insertHeaderFooter.js"></script>
+<script src="functions/updateNavActive.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>

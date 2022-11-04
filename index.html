@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+</head>
+<body>
+    <!-- Bootstrap 3 navbar, carousel, and row implemented in the body.
+    nav and footer HTML content added by insertHeaderFooter.js-->
+
+    <nav id="headerNav" class="navbar navbar-inverse">
+    </nav>
+
+    <!--Bootstrap 3 grid system implementedted through div with class row divided into columns by nested divs of class col-lg- 
+    lefthand column is filled with text and righthand column is filled with a carousel-->
+      <div class = "row">
+      <div id="welcomeText" class="col-lg-4">
+        <h2>Welcome to the Lar's Art Museum!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Perferendis exercitationem ducimus pariatur nesciunt laboriosam quod, quidem minima eaque? 
+          Esse suscipit omnis dolorum nisi harum doloremque. 
+          Adipisci placeat ratione iure? Doloribus.
+        </p>
+        <h3>
+          About the Museum:
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Illum adipisci accusantium alias quos. Quae dolore commodi voluptas molestiae ullam eaque, 
+          veritatis architecto numquam praesentium nesciunt earum esse atque dignissimos iure?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Illum adipisci accusantium alias quos. Quae dolore commodi voluptas molestiae ullam eaque, 
+          veritatis architecto numquam praesentium nesciunt earum esse atque dignissimos iure?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Illum adipisci accusantium alias quos. Quae dolore commodi voluptas molestiae ullam eaque, 
+          veritatis architecto numquam praesentium nesciunt earum esse atque dignissimos iure?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Illum adipisci accusantium alias quos. Quae dolore commodi voluptas molestiae ullam eaque, 
+          veritatis architecto numquam praesentium nesciunt earum esse atque dignissimos iure?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Illum adipisci accusantium alias quos. Quae dolore commodi voluptas molestiae ullam eaque, 
+          veritatis architecto numquam praesentium nesciunt earum esse atque dignissimos iure?
+        </p>
+
+        <h4>
+          Download our Museum Map:
+          <a href="download/museum_map.pdf" download="museum_map.pdf" target="_blank">
+            <img src="download/download.png" alt="download" height="75px" width="75px">
+          </a>
+        </h4>
+      </div>
+
+      <!--id myCarousel enables bootstrap carousel functionality (attributes of other components point to myCarousel's element). 
+        Class carousel indentifies div containing the carousel, slide enables CSS anitmation effects when transitioning between slides,
+      and the attribute data-ride=carousel initializes the carousel animation after the page loads -->
+      <div id="myCarousel" class="carousel slide col-lg-7" data-ride="carousel">
+ 
+        <!-- div of class carousel-inner contains divs of class item that contain the image and caption of each slide.
+        When a div of class item is active, its image and caption are shown on the carousel. The class active is switched from the current
+        item to the next every 5 seconds-->
+        <div class="carousel-inner home-carousel">
+          <div class="item active">
+            <img src="images/Cole_Thomas.jpg" alt="Thomas Cole">
+            <div class="carousel-caption">
+              <h3>Thomas Cole</h3>
+              <p><i>The Oxbow, View from Mount Holyoke, Northampton, Massachusetts, after a Thunderstorm </i>, 1836</p>
+              <p>The Mettropolitan Museum of Art, New York City, New York, US</p>
+              <p>https://collectionapi.metmuseum.org/api/collection/v1/iiif/10497/1655152/main-image</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="images/Claude_Monet_soleil_levant.jpg" alt="Claude Monet">
+            <div class="carousel-caption">
+              <h3>Claude Monet</h3>
+              <p><i>soleil levant </i>, 1872</p>
+              <p>Marmottan Monet Museum, Paris, France</p>
+              <p>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/1280px-Monet_-_Impression%2C_Sunrise.jpg</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="images/Anselm_Kiefer.jpg" alt="Anselm Kiefer">
+            <div class="carousel-caption">
+              <h3>Anselm Kiefer</h3>
+              <p> <i>Lot's Wife</i>, 1989</p>
+              <p>Cleveland Museum of Art, Cleveland, Ohio, US</p>
+              <p>https://i.pinimg.com/originals/76/5a/6c/765a6c368d973c68bdb591916f7cded4.jpg</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/Hudson River Valley/asher_durand.jpg" alt="Asher Durand">
+            <div class="carousel-caption">
+              <h3>Asher B. Durand</h3>
+              <p> <i>View toward the Hudson Valley</i>, 1851</p>
+              <p>Wadsworth Atheneum Museum of Art, Hartford, Connecticut, US</p>
+              <p>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/1280px-Monet_-_Impression%2C_Sunrise.jpg</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Introduces functionality to the carousel that allows a user to manually transition between slides-->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+
+    <footer id="footer">
+    </footer>
+</body>
+<script src="functions/insertHeaderFooter.js"></script>
+<script src="functions/updateNavActive.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
